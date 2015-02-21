@@ -1,2 +1,2 @@
 # ilordtony.github.io
-Una pseudopagina personal
+Esta es una pseudopagina personal hecha con la tecnica tiny-tweaks =)
