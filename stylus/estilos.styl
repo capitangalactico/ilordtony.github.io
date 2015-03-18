@@ -1,25 +1,59 @@
 @import "normalize.styl"
-blue = #03a9f4
+@import "fonts.styl"
+blueTw = #04ACEB
+blueFB = #3C5A98
+blueGit = #4183c4
+blackGit = #333
 a
 	text-decoration none
-	color blue
+	color black
 .tweaks
 	max-width 768px
 	margin 0 auto
 	text-align center
-.tweaks-name, .tweaks-title
-	font-size 5em
-.tweaks-username
-	font-size 2.5em
-
-.tweaks-image img
-	border-radius 50%
-			
-.tweaks-bio
-	font-size 2em
-	padding 0 0.5em
-
+	&-contacto
+		font-size 1.5em
+	&-name, &-title
+		font-size 5em
+	&-username
+		font-size 2.5em
+	&-image img
+		border-radius 50%			
+	&-bio
+		font-size 2em
+		padding 0 0.5em
+.tweaks-redes
+	.link
+		padding 0.5em 1em
+		color white
+		border-radius 4px
+		display inline-block
+		margin 0.5em 0.5em
+		border-radius 1em
+	.facebook
+		background blueFB
+	.twitter
+		background blueTw
+	.git
+		background blackGit
+		
 @media screen and (max-width: 767px) 
 	.tweaks
-		font-size 8px
+		&-username
+			font-size 1.7em
+		&-name, &-title
+			font-size 2.5em
+		&-bio
+			font-size 1.1em
+	.tweaks-redes
+		.link
+			display inline-block
+	
+@media screen and (max-width: 480px)
+	.tweaks-redes
+		.link
+			margin 0 auto
+			margin-bottom 0.5em
+			display block
+			width 70%
 	
