@@ -1,36 +1,87 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto)
 @import "normalize.styl"
 @import "fonts.styl"
+@import "nib/vendor"
+
 blueTw = #04ACEB
 blueFB = #3C5A98
 blueGit = #4183c4
 blackGit = #333
+
+vendor-prefixes = webkit o ms moz official
+
+miDisplay(valor1, valor2, valor3)
+	-webkit-display valor1
+	-webkit-flex-wrap valor2
+	-webkit-justify-content valor3
+	
+	-o-display valor1
+	-o-flex-wrap valor2
+	-o-justify-content valor3
+	
+	-moz-display valor1
+	-moz-flex-wrap valor2
+	-moz-justify-content valor3
+	
+	-ms-display valor1
+	-ms-flex-wrap valor2
+	-ms-justify-content valor3
+	
+	display valor1
+	flex-wrap valor2
+	justify-content valor3
+
 a
 	text-decoration none
 	color black
-.tweaks
+	
+.Nav
+	padding 0.5em
+	text-align initial
+	&-title
+		margin 0
+		display inline-block
+		font-weight normal
+		font-size 1.6em
+	&-list
+		list-style none
+		float right
+		margin 0
+		padding 0
+		display inline-block
+		line-height 30px
+	&-item
+		display inline-block
+	&-link
+		padding 0.5em 1em
+		&:hover
+			background #F2F2F2
+  		
+.Section
 	max-width 768px
 	margin 0 auto
 	text-align center
 	&-contacto
 		font-size 1.5em
 	&-name, &-title
-		font-size 5em
-	&-username
 		font-size 2.5em
+	&-username
+		font-size 1.7em
 	&-image img
 		border-radius 50%			
 	&-bio
-		font-size 2em
+		font-size 1.1em
 		padding 0 0.5em
-.tweaks-redes
+.Section-redes
 	.link
 		padding 0.5em 1em
 		color white
 		border-radius 4px
-		display inline-block
-		margin 0.5em 0.5em
 		border-radius 1em
+		margin 0 auto
+		margin-bottom 0.5em
+		display block
+		width 70%
 	.facebook
 		background blueFB
 	.twitter
@@ -38,23 +89,13 @@ a
 	.git
 		background blackGit
 		
-@media screen and (max-width: 767px) 
-	.tweaks
-		&-username
-			font-size 1.7em
-		&-name, &-title
-			font-size 2.5em
-		&-bio
-			font-size 1.1em
-	.tweaks-redes
-		.link
-			display inline-block
+//@media screen and (min-width: 767px) 
 	
-@media screen and (max-width: 480px)
-	.tweaks-redes
+@media screen and (min-width: 480px)
+	.Section 
+		&-wrapper
+			miDisplay(flex, wrap, space-around)
+	.Section-redes
 		.link
-			margin 0 auto
-			margin-bottom 0.5em
-			display block
-			width 70%
+			width auto
 	
