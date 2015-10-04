@@ -1,0 +1,33 @@
+{
+  "name": "ilordtony.github.io",
+  "version": "1.0.0",
+  "description": "My own web page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server ./",
+    "gulp-styl": "gulp styl",
+    "watch-styl": "gulp watch-styl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iLordTony/ilordtony.github.io.git"
+  },
+  "keywords": [
+    "ilordtony",
+    "web",
+    "page"
+  ],
+  "author": "Carlos Tonatihu <carlostonatihu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iLordTony/ilordtony.github.io/issues"
+  },
+  "homepage": "https://github.com/iLordTony/ilordtony.github.io#readme",
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-stylus": "^2.0.7"
+  }
+}

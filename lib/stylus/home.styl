@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto)
 @import "normalize.styl"
 @import "fonts.styl"
 @import "nib/vendor"
@@ -14,19 +13,19 @@ miDisplay(valor1, valor2, valor3)
 	-webkit-display valor1
 	-webkit-flex-wrap valor2
 	-webkit-justify-content valor3
-	
+
 	-o-display valor1
 	-o-flex-wrap valor2
 	-o-justify-content valor3
-	
+
 	-moz-display valor1
 	-moz-flex-wrap valor2
 	-moz-justify-content valor3
-	
+
 	-ms-display valor1
 	-ms-flex-wrap valor2
 	-ms-justify-content valor3
-	
+
 	display valor1
 	flex-wrap valor2
 	justify-content valor3
@@ -34,7 +33,7 @@ miDisplay(valor1, valor2, valor3)
 a
 	text-decoration none
 	color black
-	
+
 .Nav
 	padding 0.5em
 	text-align initial
@@ -56,7 +55,7 @@ a
 		padding 0.5em 1em
 		&:hover
 			background #F2F2F2
-  		
+
 .Section
 	max-width 768px
 	margin 0 auto
@@ -68,7 +67,7 @@ a
 	&-username
 		font-size 1.7em
 	&-image img
-		border-radius 50%			
+		border-radius 50%
 	&-bio
 		font-size 1.1em
 		padding 0 0.5em
@@ -88,14 +87,13 @@ a
 		background blueTw
 	.git
 		background blackGit
-		
-//@media screen and (min-width: 767px) 
-	
+
+//@media screen and (min-width: 767px)
+
 @media screen and (min-width: 480px)
-	.Section 
+	.Section
 		&-wrapper
 			miDisplay(flex, wrap, space-around)
 	.Section-redes
 		.link
 			width auto
-	
