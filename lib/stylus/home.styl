@@ -71,11 +71,19 @@ a
 		width 200px
 		height 200px
 		margin 0 auto
-		z-index 1000
+		z-index 50
 		background-image url('./img/fotini.jpg')
 		background-size cover
 		background-position center
-
+.Nav--activate
+	color black
+	background white
+	.Nav-title
+		color black
+	.Nav-link
+		color black
+		&:hover
+			border 1px solid black
 .Nav
 	padding 0.5em
 	text-align initial
@@ -84,7 +92,7 @@ a
 	top 0
 	right 0
 	left 0
-	z-index 20
+	z-index 100
 	&-title
 		margin 0
 		display inline-block
