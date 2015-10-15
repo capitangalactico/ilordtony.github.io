@@ -32,11 +32,59 @@ miDisplay(valor1, valor2, valor3)
 
 a
 	text-decoration none
-	color black
+	color white
+
+#particles-js
+	width 100%
+	min-height 100vh
+	background-color black
+	background-image url('')
+	background-size cover
+	background-position 50% 50%
+	background-repeat no-repeat
+
+.particles-js-canvas-el
+	position absolute
+	top 0
+	right 0
+	left 0
+	bottom 0
+	z-index 1
+// Son los mismos estilos del #particles-js
+.Header
+	background-attachment transparent
+	position relative
+	&-content
+		color white
+		max-width 768px
+		margin 0 auto
+		text-align center
+		padding 50px 0
+	&-name
+		margin 0
+		margin-bottom 0.5em
+		font-weight normal
+	&-image
+		position relative
+		border-radius 50%
+		border 3px solid white
+		width 200px
+		height 200px
+		margin 0 auto
+		z-index 1000
+		background-image url('./img/fotini.jpg')
+		background-size cover
+		background-position center
 
 .Nav
 	padding 0.5em
 	text-align initial
+	color white
+	position fixed
+	top 0
+	right 0
+	left 0
+	z-index 20
 	&-title
 		margin 0
 		display inline-block
@@ -52,26 +100,17 @@ a
 	&-item
 		display inline-block
 	&-link
-		padding 0.5em 1em
+		padding 0.5em 0.7em
+		color white
+		border 1px solid transparent
 		&:hover
-			background #F2F2F2
-
-.Section
-	max-width 768px
-	margin 0 auto
-	text-align center
-	&-contacto
+			box-sizing border-box
+			border 1px solid #F2F2F2
+.Redes
+	position relative
+	z-index 10
+	&-saludo
 		font-size 1.5em
-	&-name, &-title
-		font-size 2.5em
-	&-username
-		font-size 1.7em
-	&-image img
-		border-radius 50%
-	&-bio
-		font-size 1.1em
-		padding 0 0.5em
-.Section-redes
 	.link
 		padding 0.5em 1em
 		color white
@@ -91,9 +130,9 @@ a
 //@media screen and (min-width: 767px)
 
 @media screen and (min-width: 480px)
-	.Section
+	.Redes
 		&-wrapper
 			miDisplay(flex, wrap, space-around)
-	.Section-redes
+	.Redes
 		.link
 			width auto

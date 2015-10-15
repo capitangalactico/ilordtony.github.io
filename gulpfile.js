@@ -12,6 +12,10 @@ gulp.task('styl', function () {
     return styl();
 });
 
+gulp.task('styl:watch', function () {
+    return gulp.watch(['./lib/app.styl', './lib/**/*.styl'], ['styl']);
+});
+
 function styl() {
     return gulp.src('./lib/app.styl')
       .pipe(stylus({ use: nib() }))
@@ -22,10 +26,10 @@ function styl() {
 
 gulp.task('js', function() {
   return browserify({
-    entries: './lib/app.js', //punto de entrada js
+    entries: './lib/main.js', //punto de entrada js
   })
   .bundle()
-  .pipe(source('app.min.js')) // archivo destino
+  .pipe(source('main.min.js')) // archivo destino
   .pipe(buffer())
   .pipe(uglify())
   .pipe(gulp.dest('./public/')); // en dónde va a estar el archivo destino
