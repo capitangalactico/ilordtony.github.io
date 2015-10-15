@@ -60,7 +60,7 @@ a
 		margin 0 auto
 		text-align center
 		padding 50px 0
-	&-name
+	&-title
 		margin 0
 		margin-bottom 0.5em
 		font-weight normal
@@ -78,7 +78,7 @@ a
 .Nav--activate
 	color black
 	background white
-	.Nav-title
+	.Nav-name
 		color black
 	.Nav-link
 		color black
@@ -93,7 +93,7 @@ a
 	right 0
 	left 0
 	z-index 100
-	&-title
+	&-name
 		margin 0
 		display inline-block
 		font-weight normal
@@ -134,9 +134,57 @@ a
 		background blueTw
 	.git
 		background blackGit
+.About
+	background-color #F1F1F1
+	padding 1.5em 1em
+	color #5a5a5a
+	&-title
+		margin 0
+		margin-bottom 0.5em
+		text-align center
+.Contact
+	background-color blueGit
+	color #F1F1F1
+	padding 1.5em 1em
+	&-title
+		margin 0
+		margin-bottom 0.5em
+		text-align center
+	&-form form
+		input[type="email"]
+			display block
+			color black
+			background-color blueGit
+			margin-bottom 1em
+			outline none
+			border none
+			border-bottom 1px solid white
+		input[type="submit"]
+			border-radius 4px
+			border none
+			margin-top 0.5em
+			padding 0.5em 1em
+			color blueGit
+			background-color white
+			&:hover
+				color white
+				border 1px solid white
+				background-color blueGit
+		textarea
+			display block
+			color black
 
-//@media screen and (min-width: 767px)
+.Wrapper
+	&-section
+		max-width 768px
+		margin 0 auto
+.display
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	max-width 1000px
 
+/* @media screen and (min-width: 767px)*/
 @media screen and (min-width: 480px)
 	.Redes
 		&-wrapper

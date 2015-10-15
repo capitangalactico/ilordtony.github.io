@@ -24,15 +24,15 @@
 	<body ng-app="blogApp">
 		<header class="Header" id="particles-js">
 			<nav class="Nav" id="nav">
-				<h3 class="Nav-title">Tonatihu</h3>
+				<h3 class="Nav-name">Tonatihu</h3>
 				<ul class="Nav-list">
 					<li class="Nav-item"><a href="#" class="Nav-link">Home</a></li>
 					<li class="Nav-item"><a href="#" class="Nav-link">Blog</a></li>
 				</ul>
 			</nav>
 			<div class="Header-content">
-				<h1 class="Header-name">Me</h1>
-				<h2 class="Header-name" class="Header-twitter"><a href="http://twitter.com/ilordtony">@iLordTony</a></h2>
+				<h1 class="Header-title">Me</h1>
+				<h2 class="Header-title" class="Header-twitter"><a href="http://twitter.com/ilordtony">@iLordTony</a></h2>
 				<div class="Header-image"></div>
 				<div class="Redes">
 					<p class="Redes-saludo">Developer</p>
@@ -45,13 +45,31 @@
 				</div>
 			</div>
 		</header>
-		<section>
-			<div>
-				<h3>Sobre mi</h3>
-				<p>Hola </p>
+		<section class="Wrapper">
+			<div class="About">
+				<h2 class="About-title">Sobre mi</h2>
+				<div class="Wrapper-section">
+					<p>Asi es, como dice en la parte de arriba soy un desarrollador de software, enfocado principalmente en aplicaciones web.</p>
+				</div>
 			</div>
-			<div></div>
-			<div></div>
+			<div class="Contact">
+				<h2 class="Contact-title">Contactame</h2>
+				<div class="Wrapper-section display">
+					<div class="Contact-form">
+						<h3>Correo</h3>
+						<form action="">
+							<input type="email" name="email" placeholder="Tu email">
+							<textarea name="name" rows="8" cols="40"></textarea>
+							<input type="submit" name="name" value="Hola">
+						</form>
+					</div>
+					<div class="Contact-datos">
+						<h3>Sobre esta pagina</h3>
+						<p>Si te gusto esta pagina puedes checar el codigo en mi perfil de github</p>
+					</div>
+					<div></div>
+				</div>
+			</div>
 		</section>
 		<script src="./public/particles.min.js" charset="utf-8"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
