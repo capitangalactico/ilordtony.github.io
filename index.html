@@ -22,9 +22,9 @@
 		</script>
 	</head>
 	<body ng-app="blogApp">
-		<header class="Header" id="particles-js">
+		<header class="Header" id="particles-js" ng-controller="HomeController">
 			<nav class="Nav" id="nav">
-				<h3 class="Nav-name">Tonatihu</h3>
+				<h3 class="Nav-name">Tonatihu {{hola}}</h3>
 				<ul class="Nav-list">
 					<li class="Nav-item"><a href="#" class="Nav-link">Home</a></li>
 					<li class="Nav-item"><a href="#" class="Nav-link">Blog</a></li>
@@ -73,8 +73,9 @@
 				</div>
 			</div>
 		</section>
-		<script src="./public/particles.min.js" charset="utf-8"></script>
+		<script src="./public/js/particles.min.js" charset="utf-8"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="./public/app.min.js" charset="utf-8"></script>
 		<script src="./public/main.min.js" charset="utf-8"></script>
 	</body>
 </html>

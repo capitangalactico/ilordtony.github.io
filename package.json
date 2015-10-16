@@ -9,6 +9,9 @@
     "gulp-styl": "gulp styl",
     "watch-styl": "gulp styl:watch",
     "gulp-js": "gulp js",
+    "watch-js": "gulp js:watch",
+    "build": "gulp build",
+    "watch": "gulp watch",
     "browserify": "browserify lib/app.js > public/app.min.js"
   },
   "repository": {
