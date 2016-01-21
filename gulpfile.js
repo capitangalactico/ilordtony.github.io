@@ -13,7 +13,7 @@ var watchify = require('watchify');
 var assign = require('lodash.assign');
 
 var opts = {
-    entries: './lib/app.js'
+    entries: './lib/main.js'
 };
 
 opts = assign({}, watchify.args, opts);
@@ -60,7 +60,7 @@ gulp.task('js:watch', function () {
 function generateBundle(b) {
     return b
     .bundle()
-    .pipe(source('app.min.js')) // archivo destino
+    .pipe(source('main.min.js')) // archivo destino
     .pipe(buffer())
     .pipe(uglify())
     .pipe(gulp.dest('./public/')); // endonde va a estar el archivo destino

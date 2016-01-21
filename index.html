@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="description" content="Esta es una pseudopagina personal hecha con la tecnica tiny-tweaks =). Algo muy elemental">
 		<meta name="author" content="Carlos Tonatihu Barrera">
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 		<title>Carlos Tonatihu</title>
 		<link rel="shortcut icon" href="./public/img/cara.png">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
@@ -21,13 +21,13 @@
 			/* jshint ignore:end */
 		</script>
 	</head>
-	<body ng-app="blogApp">
-		<header class="Header" id="particles-js" ng-controller="HomeController">
+	<body>
+		<header class="Header" id="particles-js">
 			<nav class="Nav" id="nav">
-				<h3 class="Nav-name">Tonatihu {{hola}}</h3>
+				<h3 class="Nav-name">Tonatihu</h3>
 				<ul class="Nav-list">
 					<li class="Nav-item"><a href="#" class="Nav-link">Home</a></li>
-					<li class="Nav-item"><a href="#" class="Nav-link">Blog</a></li>
+					<li class="Nav-item"><a href="https://medium.com/@capitan" class="Nav-link">Blog</a></li>
 				</ul>
 			</nav>
 			<div class="Header-content">
@@ -54,28 +54,18 @@
 				</div>
 			</div>
 			<div class="Contact">
-				<h2 class="Contact-title">Contactame</h2>
+				<h2 class="Contact-title">Sobre esta pagina</h2>
 				<div class="Wrapper-section display">
-					<div class="Contact-form">
-						<h3 class="subtitle">Enviame un mensaje</h3>
-						<form action="">
-							<input type="email" name="email" placeholder="Tu email" required placeholder="¿Qué me quieres decir?">
-							<textarea name="name" rows="8" cols="40" required placeholder="Mensaje"></textarea>
-							<input type="submit" name="name" value="Enviar">
-						</form>
-					</div>
 					<div class="Contact-datos">
-						<h3 class="subtitle">Sobre esta pagina</h3>
-						<p>Si te gusto esta pagina puedes checar el codigo en mi perfil de github.</p>
-						<p>Y no olvies que me pudes contactar en mis redes sociales o con un correo en esta misma sección.</p>
+						<p>Si te gusto esta pagina puedes checar el codigo en mi perfil de <a href="https://github.com/iLordTony/ilordtony.github.io" class="Contact-hightlight">github</a>.</p>
+						<p>Contactame en mis redes social o mandame un <a href="https://github.com/iLordTony/ilordtony.github.io" class="Contact-hightlight">email</a>.</p>
+						<p>&lt;code&gt;&#10084;&lt;&#47;code&gt;</p>
 					</div>
-					<div></div>
 				</div>
 			</div>
 		</section>
-		<script src="./public/js/particles.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js" charset="utf-8"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="./public/app.min.js" charset="utf-8"></script>
 		<script src="./public/main.min.js" charset="utf-8"></script>
 	</body>
 </html>
